@@ -8,6 +8,8 @@ pales, pale -> true
 pale, bale -> true
 pale, bake -> false
 """
+
+
 def oneAway(x,y):
     if len(x) == len(y):
         return checkSamelength(x,y)
@@ -17,11 +19,13 @@ def oneAway(x,y):
         else:
             return checkDiffLength(x,y)
 
+
 def hashit(x):
     dic = {}
     for i in range(len(x)):
         dic[x[i]] = i
     return dic
+
 
 def checkSamelength(x,y):
     dic = hashit(x)

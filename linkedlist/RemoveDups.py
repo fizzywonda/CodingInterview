@@ -31,6 +31,18 @@ class Linkedlist:
                 previous = current
             current = current.next
 
+    def reverse(self,):
+        prev = None
+        curr = self.head
+        next = None
+
+        while curr is not None:
+            next = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next
+        self.head = prev
+
     def find(self, x):
         current = self.head
         while current is not None:
@@ -72,7 +84,8 @@ if __name__ == '__main__':
     xlist = inputs()
 
     xlist.printlist()
-    xlist.removedup()
+    # xlist.removedup()
+    # xlist.reverse()
     xlist.printlist()
 
 

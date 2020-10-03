@@ -30,7 +30,7 @@ def in_order(node):
 if __name__ == '__main__':
     x = [3,4,1,2,5]
     tree = BST(x[0])
-    for i in x:
-        tree.insert(i)
+    for i in range(1, len(x)):
+        tree.insert(x[i])
 
     in_order(tree)

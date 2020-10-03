@@ -32,5 +32,6 @@ if __name__ == '__main__':
     matrix = [[1,8,3],[2,4,0],[1,3,9]]
 
     zeroresult = zeromatrix(matrix)
+    printmatrix(matrix)
     printmatrix(zeroresult)
 

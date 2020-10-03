@@ -2,7 +2,7 @@
 Normal Merging of two sorted array
 """
 def merge(arr1,arr2):
-    i, j, k = 0,0,0
+    i, j, k = 0, 0, 0
     merged =[None for i in range(len(arr1) + len(arr2))]
 
     while(i < len(arr1) and j < len(arr2)):

@@ -10,8 +10,6 @@ def intersection(xlist, ylist):
     xlen, xtail = check_length_and_tail(xlist)
     ylen, ytail = check_length_and_tail(ylist)
 
-
-
     if xtail == ytail:
         if xlen == ylen:
             return equallist(xlist, ylist)
@@ -32,6 +30,7 @@ def check_length_and_tail(xlist):
     while curr is not None:
         lenght += 1
     return lenght,curr
+
 
 def equallist(xlist, ylist):
     xcurr = xlist.head
